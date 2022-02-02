@@ -5,19 +5,27 @@ int main()
     int h,m;
     float a;
     scanf("%d:%d",&h,&m);
-    a=abs(h*30-(11*m)/2.0);
+    a=abs(h*30-(m*11)/2.0);
     if(a<360-a)
     {
         if(a>(int)a)
-        printf("%.1f",a);
+        {
+            printf("%.1f",a);
+        }
         else
-        printf("%d",(int)a);
+        {
+            printf("%d",(int)a);
+        }
     }
     else
     {
         if(360-a>(int)(360-a))
-        printf("%.1f",360-a);
+        {
+            printf("%.1f",360-a);
+        }
         else
-        printf("%d",(int)(360-a));
-    }  
+        {
+            printf("%d",(int)(360-a));
+        }
+    }
 }
