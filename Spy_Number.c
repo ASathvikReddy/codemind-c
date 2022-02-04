@@ -1,21 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int num,sum=0,pro=1;
-    scanf("%d",&num);
-    while(num)
+    int n,sum=0,pro=1;
+    scanf("%d",&n);
+    while(n)
     {
-        pro*=num%10;
-        sum+=num%10;
-        num/=10;
+        sum+=n%10;
+        pro*=n%10;
+        n/=10;
     }
-    if( sum== pro)
-    {
-        printf("Spy Number");
-    }
-    else
-    {
-        printf("Not Spy Number");
-    }
+    if(sum==pro)
+    printf("Spy Number");
+    else 
+    printf("Not Spy Number");
 }
-
