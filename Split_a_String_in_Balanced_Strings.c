@@ -2,14 +2,14 @@
 int main()
 {
     int count=0,x=0;
-    char s[1000];
+    char str[1000];
     scanf("%[^
-]s",s);
-    for(int i=0;s[i]!=NULL;i++)
+]s",str);
+    for(int i=0;str[i]!=NULL;i++)
     {
-        if(s[i]=='R')
+        if(str[i]=='R')
         count++;
-        else if(s[i]=='L')
+        else if(str[i]=='L')
         count--;
         if(count==0)
         {
