@@ -1,34 +1,34 @@
 #include<stdio.h>
  int main()
  {
-    int number,count=0,digits=0,prime=0;
-    scanf("%d",&number);
-    if(number==1)
+    int n,c=0,d=0,p=0;
+    scanf("%d",&n);
+    if(n==1)
     printf("Not Mega Prime");
-    for(int i=1;i<=number/2;i++)
+    for(int i=1;i<=n/2;i++)
     {
-        if(number%i==0)
+        if(n%i==0)
         {
-            count++;
+            c++;
         }
     }
-    if(count==1)
+    if(c==1)
     {
-        while(number)
+        while(n)
         {
-           digits++;
-           if(number%10==2 || number%10==3 || number%10==5 || number%10==7)
+           d++;
+           if(n%10==2 || n%10==3 || n%10==5 || n%10==7)
            {
-               prime++;
+               p++;
            }
           else
           {
               break;
           }
-          number/=10;
+          n/=10;
         }
     }
-    if(number==0 && prime==digits)
+    if(n==0 && p==d)
     {
         printf("Mega Prime");
     }
