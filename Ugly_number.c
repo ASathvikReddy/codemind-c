@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,count=0;
+    int n,c=0;
     scanf("%d",&n);
     while(n!=1)
     {
@@ -19,16 +19,17 @@ int main()
         }
         else
         {
-            count++;
+            printf("Not Ugly Number");
+            c=1;
             break;
         }
     }
-    if(count==1)
-    {
-        printf("Not Ugly Number");
-    }
-    else
+    if(c==0)
     {
         printf("Ugly Number");
     }
+    /*else
+    {
+        printf("Not Ugly Number");
+    }*/
 }
